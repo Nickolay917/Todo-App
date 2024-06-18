@@ -18,12 +18,4 @@ export const date = [
     },
 ];
 
-export const addDateItem = (title, data, description) => {
-    date.push(
-        {
-            title: title,
-            data: data,
-            description: description,
-        },
-    )
-};
+export const addDateItem = (title, data, description) => {return { title: title, data: data, description: description, }};

@@ -20,7 +20,7 @@
     font-family: "Courier Prime", monospace;
 }
 
-.new-todo {
+button.new-todo {
     width: 290px;
     height: 70px;
     border-radius: 20px;
@@ -29,7 +29,7 @@
     transition: .5s;
 }
 
-.new-todo:hover {
-    background-color: #005cc5;
-    transform: scale(.99);
+button.new-todo:hover {
+    background-color: #268bff;
+    transform: scale(1.02);
 }
