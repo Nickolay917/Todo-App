@@ -1,0 +1,9 @@
+body {
+  background-color: #181818;
+  padding: 60px;
+}
+
+#root {
+  display: flex;
+  gap: 120px;
+}

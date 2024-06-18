@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-right: 60px;
+    height: 960px;
+    border-right: 1px solid #d9d9d9;
+}
+
+.logo {
+    font-family: "Kalam", cursive;
+    font-size: 64px;
+    font-weight: bold;
+    color: #fff;
+    text-align: left;
+}

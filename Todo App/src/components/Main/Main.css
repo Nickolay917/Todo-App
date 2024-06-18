@@ -1,0 +1,35 @@
+.main form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.main input {
+    background-color: #3c3c3c;
+    border: 1px solid #000000;
+    box-shadow: #b4b4b4;
+    color: #fff;
+    font-family: "Courier Prime", monospace;
+}
+
+.main textarea {
+    background-color: #3c3c3c;
+    border: 1px solid #000000;
+    box-shadow: #b4b4b4;
+    color: #fff;
+    font-family: "Courier Prime", monospace;
+}
+
+.new-todo {
+    width: 290px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: #0075ff;
+    transform: scale(1);
+    transition: .5s;
+}
+
+.new-todo:hover {
+    background-color: #005cc5;
+    transform: scale(.99);
+}

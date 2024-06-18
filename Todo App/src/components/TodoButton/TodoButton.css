@@ -1,0 +1,23 @@
+.todo-button {
+    width: 500px;
+    padding: 25px 20px;
+    color: #fff;
+    font-family: "Courier Prime", monospace;
+    background-color: #232323;
+    transition: .5s;
+}
+
+.todo-button:hover {
+    background-color: #3c3c3c;
+}
+
+.addTodo {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.todo-button-item {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}

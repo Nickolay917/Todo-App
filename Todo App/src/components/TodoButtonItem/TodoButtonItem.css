@@ -1,0 +1,11 @@
+.todo-item___body {
+    display: flex;
+    gap: 41px;
+    width: 460px;
+}
+
+.todo-item-descript {
+    overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
