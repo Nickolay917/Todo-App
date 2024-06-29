@@ -1,21 +1,23 @@
-export const date = [
+export const data = [
     {
+        id: 1,
         title: "Покормить Жаби",
-        data: "17/06/24",
+        date: new Date(),
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, repellendus.",
     },
 
     {
+        id: 2,
         title: "Покормить Кошку",
-        data: "18/06/24",
+        data: new Date(),
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, repellendus.",
     },
 
     {
+        id: 3,
         title: "Покормить Псину",
-        data: "19/06/24",
+        date: new Date(),
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, repellendus.",
     },
 ];
 
-export const addDateItem = (title, data, description) => {return { title: title, data: data, description: description, }};

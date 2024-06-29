@@ -1,0 +1,10 @@
+/* font-family: "Kalam", cursive;
+
+font-family: "Courier Prime", monospace; */
+
+* {
+  color: #fff;
+  font-family: "Courier Prime", monospace;
+  font-size: 24px;
+  font-weight: 500;
+}

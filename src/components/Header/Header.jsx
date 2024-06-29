@@ -1,6 +1,6 @@
 import "./Header.css";
 
-const Header = ( { children } ) => {
+const Header = ({ children }) => {
     return (
         <header className="header">
             {children}

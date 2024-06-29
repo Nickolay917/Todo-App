@@ -21,3 +21,16 @@
     flex-direction: column;
     gap: 42px;
 }
+
+.new-todo {
+    width: 290px;
+    border-radius: 20px;
+    background-color: #0075ff;
+    transform: scale(1);
+    transition: .5s;
+}
+
+.new-todo:hover {
+    background-color: #268bff;
+    transform: scale(1.02);
+}

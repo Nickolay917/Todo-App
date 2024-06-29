@@ -1,4 +1,4 @@
-.main form {
+.todo-form {
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -18,18 +18,4 @@
     box-shadow: #b4b4b4;
     color: #fff;
     font-family: "Courier Prime", monospace;
-}
-
-button.new-todo {
-    width: 290px;
-    height: 70px;
-    border-radius: 20px;
-    background-color: #0075ff;
-    transform: scale(1);
-    transition: .5s;
-}
-
-button.new-todo:hover {
-    background-color: #268bff;
-    transform: scale(1.02);
 }
