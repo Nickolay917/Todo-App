@@ -1,4 +1,4 @@
-import "./TodoForm.css";
+import styles from "./TodoForm.module.css";
 import TodoButton from "../TodoButton/TodoButton";
 import { useState } from "react";
 
@@ -20,15 +20,26 @@ const TodoForm = ( { onSubmit } ) => {
         if (!formProps.title?.trim().length) {
             setFormValidState(state => ({...state, title: false}));
             isFormValid = false;
-        };
+        } else {
+            setFormValidState(state => ({...state, title: true}));
+            isFormValid = true;
+        }
+
         if (!formProps.description?.trim().length) {
             setFormValidState(state => ({...state, description: false}));
             isFormValid = false;
-        };
-        if (!formProps.date) {
+        } else {
+            setFormValidState(state => ({...state, description: true}));
+            isFormValid = true;
+        }
+
+        if (!formProps.date?.trim().length) {
             setFormValidState(state => ({...state, date: false}));
             isFormValid = false;
-        };
+        } else {
+            setFormValidState(state => ({...state, description: true}));
+            isFormValid = true;
+        }
 
         if (!isFormValid) {
             return;
@@ -38,11 +49,16 @@ const TodoForm = ( { onSubmit } ) => {
         };
 
     return (
-        <form className="todo-form" onSubmit={addTodoItem}>
-            <input type="text" name="title" />
-            <input type="date" name="date" />
-            <input type="text" name="tag" />
-            <textarea name="description" cols="30" rows="10"></textarea>
+        <form className={styles['todo-form']} onSubmit={addTodoItem}>
+            <input type="text" name="title" className={`${styles.title}`} placeholder="Название"/>
+            <input type="date" name="date" className={`${styles.date}`} />
+            <input type="text" name="tag" className={`${styles.text}`} placeholder="Тэг"/>
+            <textarea 
+                name="description" cols="30" rows="10" 
+                className={`${styles.description}`} 
+                placeholder="Содержимое задачи"
+            >
+            </textarea>
             <TodoButton cl="new-todo">
                 Сохранить
             </TodoButton>
